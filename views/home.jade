@@ -1,0 +1,48 @@
+extends ./layout.jade
+block linkhome
+    a(href="#carousel") INICIO
+block content
+    div.forms-carousel
+        div.container
+            div.form.search
+                form#form-search
+                    div.header
+                        p ENCUENTRE TRATAMIENTO O CUIDADO EN SU CIUDAD
+                    div.form-group
+                        input(type="text", name="city", placeholder="Delegaciones de México DF").form-control
+                    div.form-group
+                        select(name="type").form-control
+                            option(value='', selected='selected') Seleccione tratamiento o cuidado
+                            option(value='adultos') Cuidados para adultos mayores
+                            option(value='fisicos') Cuidados terapéuticos físicos
+                            option(value='infantiles') Cuidados terapéuticos infantiles
+                            option(value='efermero') Tratamientos enfermeristicos
+                    div.form-group
+                        input(type="text", name="treament", placeholder="Especifique el tratamiento o cuidado").form-control
+                    div.form-group
+                        select(name="time").form-control
+                            option(value='', selected='selected') Seleccione en que momento del día
+                            option(value='dia') Día
+                            option(value='noche') Noche
+                            option(value='residente') Residente
+                            option(value='all') Todo el día
+    div(data-ride="carousel")#carousel.carousel.slide
+        div(role="listbox").carousel-inner
+            div.item.active
+                img(src="/images/slider/01.jpg" alt="First slide").first-slide
+            div.item
+                img(src="/images/slider/02.jpg" alt="Second slide").second-slide
+            div.item
+                img(src="/images/slider/03.jpg" alt="Third slide").third-slide
+            div.item
+                img(src="/images/slider/04.jpg" alt="Fourth slide").fourth-slide
+            div.item
+                img(src="/images/slider/05.jpg" alt="Fifth slide").fifth-slide
+            div.item
+                img(src="/images/slider/06.jpg" alt="Sixth slide").sixth-slide
+            div.item
+                img(src="/images/slider/07.jpg" alt="Seventh slide").seventh-slide
+            div.item
+                img(src="/images/slider/08.jpg" alt="Eighth slide").eight-slide
+            div.item
+                img(src="/images/slider/09.jpg" alt="Nineth slide").nineth-slide

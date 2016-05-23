@@ -1,0 +1,24 @@
+{
+  "name": "kuidis",
+  "description": "a Sails application",
+  "main": "app.js",
+  "authors": [
+    "manuelm3z"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/manuelm3z/kuidis",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/bower_components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.6.3"
+  }
+}
