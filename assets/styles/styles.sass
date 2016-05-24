@@ -1,3 +1,6 @@
+body
+    font-family: 'Roboto', sans-serif
+
 .navbar-kuidis
     background-color: rgba(0, 0, 0, 0.6)
     border-bottom: 10px solid rgba(62, 183, 177, 0.6)
@@ -30,8 +33,10 @@
 .forms-carousel
     z-index: 1
     position: absolute
+    width: 100%
 
 #carousel
+    overflow-y: hidden
     img
         width: 100%
 
@@ -44,3 +49,31 @@
 
         &.header
             background-color: rgba(247, 140, 9, 0.6)
+#about-us
+    padding: 15px 0px
+    figure.logo
+        div
+            float: right
+    p
+        font-size: 16.8px
+
+.contact-form
+    max-width: 650px
+    margin: 0 auto
+
+.icon-logo-big
+    background: url(../images/sprite.svg)
+    height: 250px
+    width: 250px
+    background-size: 310%
+    background-position: 100% 12%
+    background-repeat: no-repeat
+
+header.title
+    text-align: center
+
+.bg-green
+    background-color: #41b7b2
+
+.lttr-white
+    color: #ffffff

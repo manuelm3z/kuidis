@@ -26,7 +26,7 @@ block content
                             option(value='noche') Noche
                             option(value='residente') Residente
                             option(value='all') Todo el día
-    div(data-ride="carousel")#carousel.carousel.slide
+    div(data-ride="carousel")#carousel.carousel.slide.row
         div(role="listbox").carousel-inner
             div.item.active
                 img(src="/images/slider/01.jpg" alt="First slide").first-slide
@@ -46,3 +46,46 @@ block content
                 img(src="/images/slider/08.jpg" alt="Eighth slide").eight-slide
             div.item
                 img(src="/images/slider/09.jpg" alt="Nineth slide").nineth-slide
+    div#about-us.row.bg-green
+        div.col-md-12
+            header.title.lttr-white.row
+                h1.col-md-12 NOSOTROS
+            section.row
+                div.col-md-4
+                    figure.logo
+                        div.icon-logo-big
+                div.col-md-8
+                    p.lttr-white KUIDIS nace gracias a la estrecha colaboración de médicos, terapeutas, enfermeros certificados y expertos en  tecnología de la información, somos un servicio de cuidados médicos y terapéuticos a domicilio según la necesidad del paciente y con respuesta especializada rápida y puntual directamente en el hogar del cliente con unas tarifas claras y facilidad de reservación. Nuestra Misión es mejorar la vida de enfermos, niños especiales y personas de la tercera edad permitiéndole recibir el correcto cuidado en la tranquilidad de sus hogares y ayudando en la descentralización de los servicios médicos.
+    div#contact-us.row
+        div.col-md-12
+            header.title.lttr-white
+                h1 CONTACTO
+            section
+                div.contact-form
+                    form(role="form").form-horizontal
+                        div.form-group
+                            label(for="name").control-label Nombre:
+                            input(type="text", name="name")#name.form-control
+                        div.form-group
+                            label(for="email").control-label Email:
+                            input(type="email", name="email")#email.form-control
+                        div.form-group
+                            label(for="email2").control-label Confirmar email:
+                            input(type="email", name="email2")#email2.form-control
+                        div.form-group
+                            label(for="phone").control-label Teléfono:
+                            input(type="text", name="phone")#phone.form-control
+                        div.form-group
+                            label(for="title").control-label Título:
+                            input(type="text", name="title")#title.form-control
+                        div.form-group
+                            label(for="msj").control-label Mensaje:
+                            textarea(type="text", name="msj")#msj.form-control
+                        div.form-group
+                            label(for="about").control-label Acerca de:
+                            select(name="about").form-control
+                                option(value='', selected='selected')
+                                option(value='general') Consulta general
+                                option(value='prensa') Prensa
+                                option(value='profesional') Profesional
+                                option(value='cliente') Cliente
